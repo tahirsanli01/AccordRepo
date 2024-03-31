@@ -215,23 +215,6 @@
     <ClInclude Include="VideoFileSource.h" />
     <ClInclude Include="VideoFileWriter.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Accord.Audio\Accord.Audio.csproj">
-      <Project>{e7b65f08-82f1-438f-847a-2aac2bec9ac0}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Accord.Core\Accord.Core.csproj">
-      <Project>{a177a90c-8207-466a-af70-f2b8452a42ac}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Accord.Math.Core\Accord.Math.Core.csproj">
-      <Project>{ed3a336f-6da2-4f34-87fe-1ccffa029f8c}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Accord.Math\Accord.Math.csproj">
-      <Project>{f718e9a8-db62-4785-8c49-4333a60d256a}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Accord.Video\Accord.Video.csproj">
-      <Project>{809725dc-6502-4732-a51c-deb7fea12975}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

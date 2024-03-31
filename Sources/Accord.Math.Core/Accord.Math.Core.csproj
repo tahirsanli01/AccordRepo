@@ -143,10 +143,4 @@
       <DependentUpon>Matrix.Elementwise2.tt</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Accord.Core\Accord.Core.csproj">
-      <Project>{a177a90c-8207-466a-af70-f2b8452a42ac}</Project>
-      <Name>Accord.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

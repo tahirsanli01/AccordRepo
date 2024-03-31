@@ -10,7 +10,7 @@
     <RootNamespace>Accord.Tests.Math.FSharp</RootNamespace>
     <AssemblyName>Accord.Tests.Math.FSharp</AssemblyName>
     <Name>Accord.Tests.Math.FSharp</Name>
-	<OutputPath>bin\$(Configuration)\$(Platform)</OutputPath>
+    <OutputPath>bin\$(Configuration)\$(Platform)</OutputPath>
     <TargetFrameworkProfile />
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -71,11 +71,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Sources\Accord.Statistics\Accord.Statistics.csproj">
-      <Name>Accord.Statistics</Name>
-      <Project>{fd8101dd-c95d-42d6-ad44-ae01c25f2811}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
@@ -87,26 +82,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Numerics" />
-    <ProjectReference Include="..\..\Sources\Accord.Core\Accord.Core.csproj">
-      <Name>Accord.Core</Name>
-      <Project>{a177a90c-8207-466a-af70-f2b8452a42ac}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Sources\Accord.MachineLearning\Accord.MachineLearning.csproj">
-      <Name>Accord.MachineLearning</Name>
-      <Project>{7ab4bbcc-6222-423d-9ff9-ba9cb7c09199}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Sources\Accord.Math.Core\Accord.Math.Core.csproj">
-      <Name>Accord.Math.Core</Name>
-      <Project>{ed3a336f-6da2-4f34-87fe-1ccffa029f8c}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Sources\Accord.Math\Accord.Math.csproj">
-      <Name>Accord.Math</Name>
-      <Project>{f718e9a8-db62-4785-8c49-4333a60d256a}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <Reference Include="System.ValueTuple">
       <HintPath>..\..\Sources\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
     </Reference>

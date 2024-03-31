@@ -147,16 +147,6 @@
     <None Include="Accord.Video.DirectShow.cd" />
     <None Include="Icons\camera.png" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Accord.Imaging\Accord.Imaging.csproj">
-      <Project>{4959a83d-f78f-439e-80a5-41583eceaac6}</Project>
-      <Name>Accord.Imaging</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Accord.Video\Accord.Video.csproj">
-      <Project>{809725dc-6502-4732-a51c-deb7fea12975}</Project>
-      <Name>Accord.Video</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
