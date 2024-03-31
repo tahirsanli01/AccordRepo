@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyTitle>Accord.Core</AssemblyTitle>
+		<Description>Accord.NET - Core Library</Description>
+		<Product>Accord.NET Framework</Product>
+		<Copyright>Copyright %28c%29 Accord.NET authors, 2009-2017</Copyright>
+		<Company>Accord.NET</Company>
+		<AssemblyVersion>3.8.2</AssemblyVersion>
+		<InformationalVersion>3.8.2-alpha</InformationalVersion>
+		<FileVersion>3.8.2.6157</FileVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<NoWarn>$(NoWarn);SYSLIB0011</NoWarn>
+	</PropertyGroup>
+
+</Project>

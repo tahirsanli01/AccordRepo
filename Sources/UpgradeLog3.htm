@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+ <html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta content="en-us" http-equiv="Content-Language" /><meta content="text/html; charset=utf-16" http-equiv="Content-Type" /><title _locID="ConversionReport0">
+          Migration Report
+        </title><style> 
+                    /* Body style, for the entire document */
+                    body
+                    {
+                        background: #F3F3F4;
+                        color: #1E1E1F;
+                        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    /* Header1 style, used for the main title */
+                    h1
+                    {
+                        padding: 10px 0px 10px 10px;
+                        font-size: 21pt;
+                        background-color: #E2E2E2;
+                        border-bottom: 1px #C1C1C2 solid; 
+                        color: #201F20;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+
+                    /* Header2 style, used for "Overview" and other sections */
+                    h2
+                    {
+                        font-size: 18pt;
+                        font-weight: normal;
+                        padding: 15px 0 5px 0;
+                        margin: 0;
+                    }
+
+                    /* Header3 style, used for sub-sections, such as project name */
+                    h3
+                    {
+                        font-weight: normal;
+                        font-size: 15pt;
+                        margin: 0;
+                        padding: 15px 0 5px 0;
+                        background-color: transparent;
+                    }
+
+                    /* Color all hyperlinks one color */
+                    a
+                    {
+                        color: #1382CE;
+                    }
+
+                    /* Table styles */ 
+                    table
+                    {
+                        border-spacing: 0 0;
+                        border-collapse: collapse;
+                        font-size: 10pt;
+                    }
+
+                    table th
+                    {
+                        background: #E7E7E8;
+                        text-align: left;
+                        text-decoration: none;
+                        font-weight: normal;
+                        padding: 3px 6px 3px 6px;
+                    }
+
+                    table td
+                    {
+                        vertical-align: top;
+                        padding: 3px 6px 5px 5px;
+                        margin: 0px;
+                        border: 1px solid #E7E7E8;
+                        background: #F7F7F8;
+                    }
+
+                    /* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+                    .localLink
+                    {
+                        color: #1E1E1F;
+                        background: #EEEEED;
+                        text-decoration: none;
+                    }
+
+                    .localLink:hover
+                    {
+                        color: #1382CE;
+                        background: #FFFF99;
+                        text-decoration: none;
+                    }
+
+                    /* Center text, used in the over views cells that contain message level counts */ 
+                    .textCentered
+                    {
+                        text-align: center;
+                    }
+
+                    /* The message cells in message tables should take up all avaliable space */
+                    .messageCell
+                    {
+                        width: 100%;
+                    }
+
+                    /* Padding around the content after the h1 */ 
+                    #content 
+                    {
+	                    padding: 0px 12px 12px 12px; 
+                    }
+
+                    /* The overview table expands to width, with a max width of 97% */ 
+                    #overview table
+                    {
+                        width: auto;
+                        max-width: 75%; 
+                    }
+
+                    /* The messages tables are always 97% width */
+                    #messages table
+                    {
+                        width: 97%;
+                    }
+
+                    /* All Icons */
+                    .IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded
+                    {
+                        min-width:18px;
+                        min-height:18px; 
+                        background-repeat:no-repeat;
+                        background-position:center;
+                    }
+
+                    /* Success icon encoded */
+                    .IconSuccessEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconSuccess#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABcElEQVR4Xq2TsUsCURzHv15g8ZJcBWlyiYYgCIWcb9DFRRwMW5TA2c0/QEFwFkxxUQdxVlBwCYWOi6IhWgQhBLHJUCkhLr/BW8S7gvrAg+N+v8/v+x68Z8MGy+XSCyABQAXgBgHGALoASkIIDWSLeLBetdHryMjd5IxQPWT4rn1c/P7+xxp72Cs9m5SZ0Bq2vPnbPFafK2zDvmNHypdC0BPkLlQhxJsCAhQoZwdZU5mwxh720qGo8MzTxTTKZDPCx2HoVzp6lz0Q9tKhyx0kGs8Ny+TkWRKk8lCROwEduhyg9l/6lunOPSfmH3NUH6uQ0KHLAe7JYvJjevm+DAMGJHToKtigE+vwvIidxLamb8IBY9e+C5LiXREkfho3TSd06HJA13/oh6T51MTsfQbHrsMynQ5dDihFjiK8JJAU9AKIWTp76dCVN7HWHrajmUEGvyF9nkbAE6gLIS7kTUyuf2gscLoJrElZo/Mvj+nPz/kLTmfnEwP3tB0AAAAASUVORK5CYII=);
+                    }
+
+                    /* Information icon encoded */
+                    .IconInfoEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconInformation#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHElEQVR4Xs2TsUoDQRRF7wwoziokjZUKadInhdhukR9YP8DMX1hYW+QvdsXa/QHBbcXC7W0CamWTQnclFutceIQJwwaWNLlwm5k5d94M76mmaeCrrmsLYOocY12FcxZFUeozCqKqqgYA8uevv1H6VuPxcwlfk5N92KHBxfFeCSAxxswlYAW/Xr989x/mv9gkhtyMDhcAxgzRsp7flj8B/HF1RsMXq+NZMkopaHe7lbKxQUEIGbKsYNoGn969060hZBkQex/W8oRQwsQaW2o3Ago2SVcJUzAgY3N0lTCZZm+zPS8HB51gMmS1DEYyOz9acKO1D8JWTlafKIMxdhvlfdyT94Vv5h7P8Ky7nQzACmhvKq3zk3PjW9asz9D/1oigecsioooAAAAASUVORK5CYII=);
+                    }
+
+                    /* Warning icon encoded */
+                    .IconWarningEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconWarning#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+                    }
+
+                    /* Error icon encoded */
+                    .IconErrorEncoded
+                    {
+                        /* Note: Do not delete the comment below. It is used to verify the correctness of the encoded image resource below before the product is released */
+                        /* [---XsltValidateInternal-Base64EncodedImage:IconError#Begin#background-image: url(data:image/png;base64,#Separator#);#End#] */
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQElEQVR4XqWTvUoEQRCE6wYPZUA80AfwAQz23uCMjA7MDRQEIzPBVEyNTQUFIw00vcQTTMzuAh/AxEQQT8HF/3G/oGGnEUGuoNnd6qoZuqltyKEsyzVJq5I6rnUp6SjGeGhESikzzlc1eL7opfuVbrqbU1Zw9NCgtQMaZpY0eNnaaL2fHusvTK5vKu7sjSS1Y4y3QUA6K3e3Mau5UFDyMP7tYF9o8cAHZv68vipoIJg971PZIZ5HiwdvYGGvFVFHmGmZ2MxwmQYPXubPl9Up0tfoMQGetXd6mRbvhBw+boZ6WF7Mbv1+GsHRk0fQmPAH1GfmZirbCfDJ61tw3Px8/8pZsPAG4jlVhcPgZ7adwNWBB68lkRQWFiTgFlbnLY3DGGM7izIJIyT/jjIvEJw6fdJTc6krDzh6aMwMP9bvDH4ADSsa9uSWVJkAAAAASUVORK5CYII=);
+                    }
+                 </style><script type="text/javascript" language="javascript"> 
+          
+            // Startup 
+            // Hook up the the loaded event for the document/window, to linkify the document content
+            var startupFunction = function() { linkifyElement("messages"); };
+            
+            if(window.attachEvent)
+            {
+              window.attachEvent('onload', startupFunction);
+            }
+            else if (window.addEventListener) 
+            {
+              window.addEventListener('load', startupFunction, false);
+            }
+            else 
+            {
+              document.addEventListener('load', startupFunction, false);
+            } 
+            
+            // Toggles the visibility of table rows with the specified name 
+            function toggleTableRowsByName(name)
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  if(!!currentName && currentName.indexOf(name) == 0)
+                  {
+                      var isVisible = allRows[i].style.display == ''; 
+                      isVisible ? allRows[i].style.display = 'none' : allRows[i].style.display = '';
+                  }
+               }
+            }
+            
+            function scrollToFirstVisibleRow(name) 
+            {
+               var allRows = document.getElementsByTagName('tr');
+               for (i=0; i < allRows.length; i++)
+               {
+                  var currentName = allRows[i].getAttribute('name');
+                  var isVisible = allRows[i].style.display == ''; 
+                  if(!!currentName && currentName.indexOf(name) == 0 && isVisible)
+                  {
+                     allRows[i].scrollIntoView(true); 
+                     return true; 
+                  }
+               }
+               
+               return false;
+            }
+            
+            // Linkifies the specified text content, replaces candidate links with html links 
+            function linkify(text)
+            {
+                 if(!text || 0 === text.length)
+                 {
+                     return text; 
+                 }
+
+                 // Find http, https and ftp links and replace them with hyper links 
+                 var urlLink = /(http|https|ftp)\:\/\/[a-zA-Z0-9\-\.]+(:[a-zA-Z0-9]*)?\/?([a-zA-Z0-9\-\._\?\,\/\\\+&%\$#\=~;\{\}])*/gi;
+                 
+                 return text.replace(urlLink, '<a href="$&">$&</a>') ;
+            }
+            
+            // Linkifies the specified element by ID
+            function linkifyElement(id)
+            {
+                var element = document.getElementById(id);
+                if(!!element)
+                {
+                  element.innerHTML = linkify(element.innerHTML); 
+                }
+            }
+            
+            function ToggleMessageVisibility(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              toggleTableRowsByName("MessageRowClass" + projectName);
+              toggleTableRowsByName('MessageRowHeaderShow' + projectName);
+              toggleTableRowsByName('MessageRowHeaderHide' + projectName); 
+            }
+            
+            function ScrollToFirstVisibleMessage(projectName)
+            {
+              if(!projectName || 0 === projectName.length)
+              {
+                return; 
+              }
+              
+              // First try the 'Show messages' row
+              if(!scrollToFirstVisibleRow('MessageRowHeaderShow' + projectName))
+              {
+                // Failed to find a visible row for 'Show messages', try an actual message row 
+                scrollToFirstVisibleRow('MessageRowClass' + projectName); 
+              }
+            }
+           </script></head><body><h1 _locID="ConversionReport">
+          Migration Report - </h1><div id="content"><h2 _locID="OverviewTitle">Overview</h2><div id="overview"><table><tr><th></th><th _locID="ProjectTableHeader">Project</th><th _locID="PathTableHeader">Path</th><th _locID="ErrorsTableHeader">Errors</th><th _locID="WarningsTableHeader">Warnings</th><th _locID="MessagesTableHeader">Messages</th></tr><tr><td class="IconErrorEncoded" /><td><strong><a href="#Accord.Documentation">Accord.Documentation</a></strong></td><td>Accord.Docs\Accord.Documentation\Accord.Documentation.shfbproj</td><td class="textCentered"><a href="#Accord.DocumentationError">1</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Audio (NETStandard)">Accord.Audio (NETStandard)</a></strong></td><td>Accord.Audio\Accord.Audio (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Audio.DirectSound (NETStandard)">Accord.Audio.DirectSound (NETStandard)</a></strong></td><td>Accord.Audio.DirectSound\Accord.Audio.DirectSound (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Audition (NETStandard)">Accord.Audition (NETStandard)</a></strong></td><td>Accord.Audition\Accord.Audition (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Controls (NETStandard)">Accord.Controls (NETStandard)</a></strong></td><td>Accord.Controls\Accord.Controls (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Controls.Audio (NETStandard)">Accord.Controls.Audio (NETStandard)</a></strong></td><td>Accord.Controls.Audio\Accord.Controls.Audio (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Controls.Imaging (NETStandard)">Accord.Controls.Imaging (NETStandard)</a></strong></td><td>Accord.Controls.Imaging\Accord.Controls.Imaging (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Controls.Vision (NETStandard)">Accord.Controls.Vision (NETStandard)</a></strong></td><td>Accord.Controls.Vision\Accord.Controls.Vision (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Core (NETStandard)">Accord.Core (NETStandard)</a></strong></td><td>Accord.Core\Accord.Core (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.DataSets (NETStandard)">Accord.DataSets (NETStandard)</a></strong></td><td>Accord.DataSets\Accord.DataSets (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Debug.Visualizers (GPL) (NETStandard)">Accord.Debug.Visualizers (GPL) (NETStandard)</a></strong></td><td>..\Tools\DebuggerVisualizers\Accord.Debug.Visualizers (GPL) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Fuzzy (NETStandard)">Accord.Fuzzy (NETStandard)</a></strong></td><td>Accord.Fuzzy\Accord.Fuzzy (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Genetic (NETStandard)">Accord.Genetic (NETStandard)</a></strong></td><td>Accord.Genetic\Accord.Genetic (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Imaging (NETStandard)">Accord.Imaging (NETStandard)</a></strong></td><td>Accord.Imaging\Accord.Imaging (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Imaging (Noncommercial) (NETStandard)">Accord.Imaging (Noncommercial) (NETStandard)</a></strong></td><td>Extras\Accord.Imaging.Noncommercial\Accord.Imaging (Noncommercial) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.IO (NETStandard)">Accord.IO (NETStandard)</a></strong></td><td>Accord.IO\Accord.IO (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.MachineLearning (GPL) (NETStandard)">Accord.MachineLearning (GPL) (NETStandard)</a></strong></td><td>Extras\Accord.MachineLearning.GPL\Accord.MachineLearning (GPL) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.MachineLearning (NETStandard)">Accord.MachineLearning (NETStandard)</a></strong></td><td>Accord.MachineLearning\Accord.MachineLearning (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Math (NETStandard)">Accord.Math (NETStandard)</a></strong></td><td>Accord.Math\Accord.Math (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Math (Noncommercial) (NETStandard)">Accord.Math (Noncommercial) (NETStandard)</a></strong></td><td>Extras\Accord.Math.Noncommercial\Accord.Math (Noncommercial) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Math.Core (NETStandard)">Accord.Math.Core (NETStandard)</a></strong></td><td>Accord.Math.Core\Accord.Math.Core (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Neuro (NETStandard)">Accord.Neuro (NETStandard)</a></strong></td><td>Accord.Neuro\Accord.Neuro (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Perf.MachineLearning (NetCore)">Accord.Perf.MachineLearning (NetCore)</a></strong></td><td>..\Tools\Performance\MachineLearning\Accord.Perf.MachineLearning (NetCore).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Statistics (NETStandard)">Accord.Statistics (NETStandard)</a></strong></td><td>Accord.Statistics\Accord.Statistics (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Audio (NETStandard)">Accord.Tests.Audio (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Audio\Accord.Tests.Audio (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Core (NETStandard)">Accord.Tests.Core (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Core\Accord.Tests.Core (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Imaging (NETStandard)">Accord.Tests.Imaging (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Imaging\Accord.Tests.Imaging (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Imaging (Noncommercial) (NETStandard)">Accord.Tests.Imaging (Noncommercial) (NETStandard)</a></strong></td><td>Extras\Accord.Tests.Imaging.Noncommercial\Accord.Tests.Imaging (Noncommercial) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.IO (NETStandard)">Accord.Tests.IO (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.IO\Accord.Tests.IO (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.MachineLearning (GPL) (NETStandard)">Accord.Tests.MachineLearning (GPL) (NETStandard)</a></strong></td><td>Extras\Accord.Tests.MachineLearning.GPL\Accord.Tests.MachineLearning (GPL) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.MachineLearning (NETStandard)">Accord.Tests.MachineLearning (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.MachineLearning\Accord.Tests.MachineLearning (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Math (NETStandard)">Accord.Tests.Math (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Math\Accord.Tests.Math (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Math (Noncommercial) (NETStandard)">Accord.Tests.Math (Noncommercial) (NETStandard)</a></strong></td><td>Extras\Accord.Tests.Math.Noncommercial\Accord.Tests.Math (Noncommercial) (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Statistics (NETStandard)">Accord.Tests.Statistics (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Statistics\Accord.Tests.Statistics (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Statistics.VB (NETStandard)">Accord.Tests.Statistics.VB (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Statistics.VB\Accord.Tests.Statistics.VB (NETStandard).vbproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Text (NETStandard)">Accord.Tests.Text (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Text\Accord.Tests.Text (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Video (NETStandard)">Accord.Tests.Video (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Video\Accord.Tests.Video (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Video.FFMPEG (NETStandard)">Accord.Tests.Video.FFMPEG (NETStandard)</a></strong></td><td>Extras\Accord.Tests.Video.FFMPEG\Accord.Tests.Video.FFMPEG (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Tests.Vision (NETStandard)">Accord.Tests.Vision (NETStandard)</a></strong></td><td>..\Unit Tests\Accord.Tests.Vision\Accord.Tests.Vision (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Text (NETStandard)">Accord.Text (NETStandard)</a></strong></td><td>Accord.Text\Accord.Text (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Video (NETStandard)">Accord.Video (NETStandard)</a></strong></td><td>Accord.Video\Accord.Video (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Video.DirectShow (NETStandard)">Accord.Video.DirectShow (NETStandard)</a></strong></td><td>Accord.Video.DirectShow\Accord.Video.DirectShow (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Video.Kinect (NETStandard)">Accord.Video.Kinect (NETStandard)</a></strong></td><td>Accord.Video.Kinect\Accord.Video.Kinect (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Video.VFW (NETStandard)">Accord.Video.VFW (NETStandard)</a></strong></td><td>Accord.Video.VFW\Accord.Video.VFW (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Video.Ximea (NETStandard)">Accord.Video.Ximea (NETStandard)</a></strong></td><td>Accord.Video.Ximea\Accord.Video.Ximea (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Accord.Vision (NETStandard)">Accord.Vision (NETStandard)</a></strong></td><td>Accord.Vision\Accord.Vision (NETStandard).csproj</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Docs">Docs</a></strong></td><td>Docs</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Non LGPL">Non LGPL</a></strong></td><td>Non LGPL</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Performance">Performance</a></strong></td><td>Performance</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Solution Items">Solution Items</a></strong></td><td>Solution Items</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Unit Tests">Unit Tests</a></strong></td><td>Unit Tests</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#">0</a></td></tr><tr><td class="IconSuccessEncoded" /><td><strong><a href="#Solution"><span _locID="OverviewSolutionSpan">Solution</span></a></strong></td><td>Accord.NET (NETStandard).sln</td><td class="textCentered"><a>0</a></td><td class="textCentered"><a>0</a></td><td class="textCentered"><a href="#" onclick="ScrollToFirstVisibleMessage('Solution'); return false;">1</a></td></tr></table></div><h2 _locID="SolutionAndProjectsTitle">Solution and projects</h2><div id="messages"><a name="Accord.Documentation" /><h3>Accord.Documentation</h3><table><tr id="Accord.DocumentationHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="ErrorRowClassAccord.Documentation"><td class="IconErrorEncoded"><a name="Accord.DocumentationError" /></td><td class="messageCell"><strong>Accord.Docs\Accord.Documentation\Accord.Documentation.shfbproj:
+        </strong><span>The application which this project type is based on was not found. Please try this link for further information: 7cf6df6d-3b04-46f8-a40b-537d21bca0b4</span></td></tr></table><a name="Accord.Audio (NETStandard)" /><h3>Accord.Audio (NETStandard)</h3><table><tr id="Accord.Audio (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Audio (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Audio.DirectSound (NETStandard)" /><h3>Accord.Audio.DirectSound (NETStandard)</h3><table><tr id="Accord.Audio.DirectSound (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Audio.DirectSound (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Audition (NETStandard)" /><h3>Accord.Audition (NETStandard)</h3><table><tr id="Accord.Audition (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Audition (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Controls (NETStandard)" /><h3>Accord.Controls (NETStandard)</h3><table><tr id="Accord.Controls (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Controls (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Controls.Audio (NETStandard)" /><h3>Accord.Controls.Audio (NETStandard)</h3><table><tr id="Accord.Controls.Audio (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Controls.Audio (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Controls.Imaging (NETStandard)" /><h3>Accord.Controls.Imaging (NETStandard)</h3><table><tr id="Accord.Controls.Imaging (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Controls.Imaging (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Controls.Vision (NETStandard)" /><h3>Accord.Controls.Vision (NETStandard)</h3><table><tr id="Accord.Controls.Vision (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Controls.Vision (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Core (NETStandard)" /><h3>Accord.Core (NETStandard)</h3><table><tr id="Accord.Core (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Core (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.DataSets (NETStandard)" /><h3>Accord.DataSets (NETStandard)</h3><table><tr id="Accord.DataSets (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.DataSets (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Debug.Visualizers (GPL) (NETStandard)" /><h3>Accord.Debug.Visualizers (GPL) (NETStandard)</h3><table><tr id="Accord.Debug.Visualizers (GPL) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Debug.Visualizers (GPL) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Fuzzy (NETStandard)" /><h3>Accord.Fuzzy (NETStandard)</h3><table><tr id="Accord.Fuzzy (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Fuzzy (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Genetic (NETStandard)" /><h3>Accord.Genetic (NETStandard)</h3><table><tr id="Accord.Genetic (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Genetic (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Imaging (NETStandard)" /><h3>Accord.Imaging (NETStandard)</h3><table><tr id="Accord.Imaging (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Imaging (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Imaging (Noncommercial) (NETStandard)" /><h3>Accord.Imaging (Noncommercial) (NETStandard)</h3><table><tr id="Accord.Imaging (Noncommercial) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Imaging (Noncommercial) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.IO (NETStandard)" /><h3>Accord.IO (NETStandard)</h3><table><tr id="Accord.IO (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.IO (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.MachineLearning (GPL) (NETStandard)" /><h3>Accord.MachineLearning (GPL) (NETStandard)</h3><table><tr id="Accord.MachineLearning (GPL) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.MachineLearning (GPL) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.MachineLearning (NETStandard)" /><h3>Accord.MachineLearning (NETStandard)</h3><table><tr id="Accord.MachineLearning (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.MachineLearning (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Math (NETStandard)" /><h3>Accord.Math (NETStandard)</h3><table><tr id="Accord.Math (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Math (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Math (Noncommercial) (NETStandard)" /><h3>Accord.Math (Noncommercial) (NETStandard)</h3><table><tr id="Accord.Math (Noncommercial) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Math (Noncommercial) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Math.Core (NETStandard)" /><h3>Accord.Math.Core (NETStandard)</h3><table><tr id="Accord.Math.Core (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Math.Core (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Neuro (NETStandard)" /><h3>Accord.Neuro (NETStandard)</h3><table><tr id="Accord.Neuro (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Neuro (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Perf.MachineLearning (NetCore)" /><h3>Accord.Perf.MachineLearning (NetCore)</h3><table><tr id="Accord.Perf.MachineLearning (NetCore)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Perf.MachineLearning (NetCore) logged no messages.
+                  </td></tr></table><a name="Accord.Statistics (NETStandard)" /><h3>Accord.Statistics (NETStandard)</h3><table><tr id="Accord.Statistics (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Statistics (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Audio (NETStandard)" /><h3>Accord.Tests.Audio (NETStandard)</h3><table><tr id="Accord.Tests.Audio (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Audio (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Core (NETStandard)" /><h3>Accord.Tests.Core (NETStandard)</h3><table><tr id="Accord.Tests.Core (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Core (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Imaging (NETStandard)" /><h3>Accord.Tests.Imaging (NETStandard)</h3><table><tr id="Accord.Tests.Imaging (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Imaging (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Imaging (Noncommercial) (NETStandard)" /><h3>Accord.Tests.Imaging (Noncommercial) (NETStandard)</h3><table><tr id="Accord.Tests.Imaging (Noncommercial) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Imaging (Noncommercial) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.IO (NETStandard)" /><h3>Accord.Tests.IO (NETStandard)</h3><table><tr id="Accord.Tests.IO (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.IO (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.MachineLearning (GPL) (NETStandard)" /><h3>Accord.Tests.MachineLearning (GPL) (NETStandard)</h3><table><tr id="Accord.Tests.MachineLearning (GPL) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.MachineLearning (GPL) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.MachineLearning (NETStandard)" /><h3>Accord.Tests.MachineLearning (NETStandard)</h3><table><tr id="Accord.Tests.MachineLearning (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.MachineLearning (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Math (NETStandard)" /><h3>Accord.Tests.Math (NETStandard)</h3><table><tr id="Accord.Tests.Math (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Math (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Math (Noncommercial) (NETStandard)" /><h3>Accord.Tests.Math (Noncommercial) (NETStandard)</h3><table><tr id="Accord.Tests.Math (Noncommercial) (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Math (Noncommercial) (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Statistics (NETStandard)" /><h3>Accord.Tests.Statistics (NETStandard)</h3><table><tr id="Accord.Tests.Statistics (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Statistics (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Statistics.VB (NETStandard)" /><h3>Accord.Tests.Statistics.VB (NETStandard)</h3><table><tr id="Accord.Tests.Statistics.VB (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Statistics.VB (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Text (NETStandard)" /><h3>Accord.Tests.Text (NETStandard)</h3><table><tr id="Accord.Tests.Text (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Text (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Video (NETStandard)" /><h3>Accord.Tests.Video (NETStandard)</h3><table><tr id="Accord.Tests.Video (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Video (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Video.FFMPEG (NETStandard)" /><h3>Accord.Tests.Video.FFMPEG (NETStandard)</h3><table><tr id="Accord.Tests.Video.FFMPEG (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Video.FFMPEG (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Tests.Vision (NETStandard)" /><h3>Accord.Tests.Vision (NETStandard)</h3><table><tr id="Accord.Tests.Vision (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Tests.Vision (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Text (NETStandard)" /><h3>Accord.Text (NETStandard)</h3><table><tr id="Accord.Text (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Text (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Video (NETStandard)" /><h3>Accord.Video (NETStandard)</h3><table><tr id="Accord.Video (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Video (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Video.DirectShow (NETStandard)" /><h3>Accord.Video.DirectShow (NETStandard)</h3><table><tr id="Accord.Video.DirectShow (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Video.DirectShow (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Video.Kinect (NETStandard)" /><h3>Accord.Video.Kinect (NETStandard)</h3><table><tr id="Accord.Video.Kinect (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Video.Kinect (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Video.VFW (NETStandard)" /><h3>Accord.Video.VFW (NETStandard)</h3><table><tr id="Accord.Video.VFW (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Video.VFW (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Video.Ximea (NETStandard)" /><h3>Accord.Video.Ximea (NETStandard)</h3><table><tr id="Accord.Video.Ximea (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Video.Ximea (NETStandard) logged no messages.
+                  </td></tr></table><a name="Accord.Vision (NETStandard)" /><h3>Accord.Vision (NETStandard)</h3><table><tr id="Accord.Vision (NETStandard)HeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Accord.Vision (NETStandard) logged no messages.
+                  </td></tr></table><a name="Docs" /><h3>Docs</h3><table><tr id="DocsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Docs logged no messages.
+                  </td></tr></table><a name="Non LGPL" /><h3>Non LGPL</h3><table><tr id="Non LGPLHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Non LGPL logged no messages.
+                  </td></tr></table><a name="Performance" /><h3>Performance</h3><table><tr id="PerformanceHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Performance logged no messages.
+                  </td></tr></table><a name="Solution Items" /><h3>Solution Items</h3><table><tr id="Solution ItemsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Solution Items logged no messages.
+                  </td></tr></table><a name="Unit Tests" /><h3>Unit Tests</h3><table><tr id="Unit TestsHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr><td class="IconInfoEncoded" /><td class="messageCell" _locID="NoMessagesRow">Unit Tests logged no messages.
+                  </td></tr></table><a name="Solution" /><h3 _locID="ProjectDisplayNameHeader">Solution</h3><table><tr id="SolutionHeaderRow"><th></th><th class="messageCell" _locID="MessageTableHeader">Message</th></tr><tr name="MessageRowHeaderShowSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="ShowAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Show 1 additional messages
+        </a></td></tr><tr name="MessageRowClassSolution" style="display: none"><td class="IconInfoEncoded"><a name="SolutionMessage" /></td><td class="messageCell"><strong>Accord.NET (NETStandard).sln:
+        </strong><span>The solution file does not require migration.</span></td></tr><tr style="display: none" name="MessageRowHeaderHideSolution"><td class="IconInfoEncoded" /><td class="messageCell"><a _locID="HideAdditionalMessages" href="#" name="SolutionMessage" onclick="ToggleMessageVisibility('Solution'); return false;">
+          Hide 1 additional messages
+        </a></td></tr></table></div></div></body></html>

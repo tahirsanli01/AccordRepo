@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyTitle>Accord.Imaging</AssemblyTitle>
+		<Description>Accord.NET - Imaging Library</Description>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<NoWarn>$(NoWarn);SYSLIB0011</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Drawing.Common" Version="8.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Core.Accord.Core\Core.Accord.Core.csproj" />
+	  <ProjectReference Include="..\Core.Accord.Math.Core\Core.Accord.Math.Core.csproj" />
+	  <ProjectReference Include="..\Core.Accord.Math\Core.Accord.Math.csproj" />
+	  <ProjectReference Include="..\Core.Accord.Statistics\Core.Accord.Statistics.csproj" />
+	</ItemGroup>
+
+</Project>
