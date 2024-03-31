@@ -206,7 +206,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="RayleighDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return 1.0 - Math.Exp(-x * x / (2 * sigma * sigma));
         }

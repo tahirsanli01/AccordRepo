@@ -8,4 +8,13 @@
     <Description>Accord.NET - IO Library</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ICSharpCode.SharpZipLib.dll" Version="0.85.4.369" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Accord.Core\Core.Accord.Core.csproj" />
+    <ProjectReference Include="..\Core.Accord.IO\Core.Accord.IO.csproj" />
+  </ItemGroup>
+
 </Project>

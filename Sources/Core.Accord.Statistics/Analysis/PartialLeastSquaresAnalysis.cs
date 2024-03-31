@@ -141,7 +141,7 @@ namespace Accord.Statistics.Analysis
 
         internal double[][] loadingsX;
         internal double[][] loadingsY;
-        internal double[][] scoresX;
+        public double[][] scoresX;
         internal double[][] scoresY;
         private double[][] weights;
         private double[][] coeffbase;

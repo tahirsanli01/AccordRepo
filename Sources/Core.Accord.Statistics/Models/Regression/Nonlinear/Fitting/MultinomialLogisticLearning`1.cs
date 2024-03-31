@@ -157,7 +157,7 @@ namespace Accord.Statistics.Models.Regression.Fitting
 #endif
         }
 
-        internal double crossEntropy(double[] w)
+        public double crossEntropy(double[] w)
         {
             double sum = 0;
 
@@ -171,7 +171,7 @@ namespace Accord.Statistics.Models.Regression.Fitting
             return sum / (double)inputs.Length;
         }
 
-        internal double[] crossEntropyGradient(double[] w)
+        public double[] crossEntropyGradient(double[] w)
         {
             gradient.Clear();
 

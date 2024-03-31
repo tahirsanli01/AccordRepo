@@ -355,7 +355,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="NormalDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return Normal.Function((x - mean) / stdDev);
         }

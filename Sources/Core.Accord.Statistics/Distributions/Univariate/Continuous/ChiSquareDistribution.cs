@@ -200,7 +200,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   Incomplete Gamma Function Γ(a, x)</see> as CDF(x; df) = Γ(df/2, x/d). </para>
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return Gamma.LowerIncomplete(degreesOfFreedom / 2.0, x / 2.0);
         }

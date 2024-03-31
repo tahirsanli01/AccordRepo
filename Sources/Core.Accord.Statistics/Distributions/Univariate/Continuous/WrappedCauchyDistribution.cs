@@ -173,7 +173,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   Not supported.
         /// </summary>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             throw new NotSupportedException();
         }

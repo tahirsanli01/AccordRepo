@@ -251,7 +251,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="NoncentralTDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return distributionFunctionLowerTail(x, DegreesOfFreedom, Noncentrality);
         }

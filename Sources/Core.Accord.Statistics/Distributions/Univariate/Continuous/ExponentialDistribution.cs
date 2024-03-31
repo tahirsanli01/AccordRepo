@@ -270,7 +270,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   The Exponential CDF is defined as CDF(x) = 1 - exp(-λ*x).</para>
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return 1.0 - Math.Exp(-lambda * x);
         }

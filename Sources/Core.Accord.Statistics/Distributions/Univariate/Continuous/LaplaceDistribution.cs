@@ -220,7 +220,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="LaplaceDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return 0.5 * (1 + Math.Sign(x - u) * (1 - Math.Exp(-Math.Abs(x - u) / b)));
         }

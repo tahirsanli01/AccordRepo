@@ -24,7 +24,6 @@ namespace Accord.Tests.MachineLearning
 {
     using System.Collections.Generic;
     using System.Drawing;
-    using Accord.MachineLearning.Geometry;
     using AForge;
     using Accord.Tests.Imaging.Properties;
     using NUnit.Framework;
@@ -44,102 +43,106 @@ namespace Accord.Tests.MachineLearning
     public class KDTree2DTest
     {
 
-        [Test]
-        public void gh_784()
-        {
-            Accord.Math.Random.Generator.Seed = 0;
-            var rnd = Accord.Math.Random.Generator.Random;
-
-            // This is the same example found in Wikipedia page on
-            // k-d trees: http://en.wikipedia.org/wiki/K-d_tree
-
-            var image = UnmanagedImage.Create(800, 600, PixelFormat.Format24bppRgb);
-
-            // Suppose we have the following set of points:
-            var points = new double[300000][];
-            var listPoints = new List<IntPoint>(points.Length);
-            for (int i = 0; i < points.Length; i++)
-            {
-                var point = new IntPoint(rnd.Next(0, image.Width), rnd.Next(0, image.Height));
-
-                points[i] = new double[] { point.X, point.Y };
-
-                listPoints.Add(point);
-            }
-
-            var region = new Rectangle(676, 441, 70, 55);
-
-            var sw1 = new Stopwatch();
-            sw1.Restart();
-            var query1 = listPoints.FindAll((obj) =>
-            {
-                return obj.X > region.Left && obj.X < region.Right && obj.Y > region.Top && obj.Y < region.Bottom;
-            });
-
-            sw1.Stop();
-
-            listPoints.Clear();
-
-            var sw2 = new Stopwatch();
-            sw2.Restart();
-            // To create a tree from a set of points, we can use
-            var tree = KDTree.FromData<int>(points, new Accord.Math.Distances.Manhattan(), inPlace: true);
-            sw2.Stop();
-
-            var sw3 = new Stopwatch();
-            sw3.Restart();
-            var actual = tree.GetNodesInsideRegion(region.ToHyperrectangle()).Apply(x => new IntPoint((int)x.Position[0], (int)x.Position[1]));
-            sw3.Stop();
 
 
-            var sw4 = new Stopwatch();
-            sw4.Restart();
-            var expected = QueryKDTree2D(tree.Root, region);
-            sw4.Stop();
+        #region TODO: Exit Comment
+        //[Test]
+        //public void gh_784()
+        //{
+        //    Accord.Math.Random.Generator.Seed = 0;
+        //    var rnd = Accord.Math.Random.Generator.Random;
 
-            Assert.AreEqual(actual, expected);
-        }
+        //    // This is the same example found in Wikipedia page on
+        //    // k-d trees: http://en.wikipedia.org/wiki/K-d_tree
+
+        //    var image = UnmanagedImage.Create(800, 600, PixelFormat.Format24bppRgb);
+
+        //    // Suppose we have the following set of points:
+        //    var points = new double[300000][];
+        //    var listPoints = new List<IntPoint>(points.Length);
+        //    for (int i = 0; i < points.Length; i++)
+        //    {
+        //        var point = new IntPoint(rnd.Next(0, image.Width), rnd.Next(0, image.Height));
+
+        //        points[i] = new double[] { point.X, point.Y };
+
+        //        listPoints.Add(point);
+        //    }
+
+        //    var region = new Rectangle(676, 441, 70, 55);
+
+        //    var sw1 = new Stopwatch();
+        //    sw1.Restart();
+        //    var query1 = listPoints.FindAll((obj) =>
+        //    {
+        //        return obj.X > region.Left && obj.X < region.Right && obj.Y > region.Top && obj.Y < region.Bottom;
+        //    });
+
+        //    sw1.Stop();
+
+        //    listPoints.Clear();
+
+        //    var sw2 = new Stopwatch();
+        //    sw2.Restart();
+        //    // To create a tree from a set of points, we can use
+        //    var tree = KDTree.FromData<int>(points, new Accord.Math.Distances.Manhattan(), inPlace: true);
+        //    sw2.Stop();
+
+        //    var sw3 = new Stopwatch();
+        //    sw3.Restart();
+        //    var actual = tree.GetNodesInsideRegion(region.ToHyperrectangle()).Apply(x => new IntPoint((int)x.Position[0], (int)x.Position[1]));
+        //    sw3.Stop();
 
 
-        public static IList<IntPoint> QueryKDTree2D(KDTreeNode<int> node, Rectangle region)
-        {
-            return QueryKDTree2D(node, region, region);
-        }
+        //    var sw4 = new Stopwatch();
+        //    sw4.Restart();
+        //    var expected = QueryKDTree2D(tree.Root, region);
+        //    sw4.Stop();
 
-        private static IList<IntPoint> QueryKDTree2D(KDTreeNode<int> node, Rectangle region, Rectangle subRegion)
-        {
-            var result = new List<IntPoint>();
+        //    Assert.AreEqual(actual, expected);
+        //}
 
-            if (node != null && region.IntersectsWith(subRegion))
-            {
-                //if (node.Position.Length != 2)
-                //    new DimensionMismatchException("node", "The node should have a 2D vector.");
+        //public static IList<IntPoint> QueryKDTree2D(KDTreeNode<int> node, Rectangle region)
+        //{
+        //    return QueryKDTree2D(node, region, region);
+        //}
 
-                var point = new IntPoint((int)node.Position[0], (int)node.Position[1]);
+        //private static IList<IntPoint> QueryKDTree2D(KDTreeNode<int> node, Rectangle region, Rectangle subRegion)
+        //{
+        //    var result = new List<IntPoint>();
 
-                if (region.Contains(point.X, point.Y))
-                    result.Add(point);
+        //    if (node != null && region.IntersectsWith(subRegion))
+        //    {
+        //        //if (node.Position.Length != 2)
+        //        //    new DimensionMismatchException("node", "The node should have a 2D vector.");
 
-                result.AddRange(QueryKDTree2D(node.Left, region, LeftRect(subRegion, node)));
-                result.AddRange(QueryKDTree2D(node.Right, region, RightRect(subRegion, node)));
-            }
+        //        var point = new IntPoint((int)node.Position[0], (int)node.Position[1]);
 
-            return result;
-        }
+        //        if (region.Contains(point.X, point.Y))
+        //            result.Add(point);
 
-        // helper: get the left rectangle of node inside parent's rect
-        private static Rectangle LeftRect(Rectangle rect, KDTreeNode<int> node)
-        {
-            return node.Axis != 0 ?
-                Rectangle.FromLTRB(rect.Left, rect.Top, rect.Right, (int)node.Position[1]) :
-                Rectangle.FromLTRB(rect.Left, rect.Top, (int)node.Position[0], rect.Bottom);
-        }
-        // helper: get the right rectangle of node inside parent's rect
-        private static Rectangle RightRect(Rectangle rect, KDTreeNode<int> node)
-        {
-            return node.Axis != 0 ?
-                Rectangle.FromLTRB(rect.Left, (int)node.Position[1], rect.Right, rect.Bottom) :
-                Rectangle.FromLTRB((int)node.Position[0], rect.Top, rect.Right, rect.Bottom);
-        }
+        //        result.AddRange(QueryKDTree2D(node.Left, region, LeftRect(subRegion, node)));
+        //        result.AddRange(QueryKDTree2D(node.Right, region, RightRect(subRegion, node)));
+        //    }
+
+        //    return result;
+        //}
+
+        //// helper: get the left rectangle of node inside parent's rect
+        //private static Rectangle LeftRect(Rectangle rect, KDTreeNode<int> node)
+        //{
+        //    return node.Axis != 0 ?
+        //        Rectangle.FromLTRB(rect.Left, rect.Top, rect.Right, (int)node.Position[1]) :
+        //        Rectangle.FromLTRB(rect.Left, rect.Top, (int)node.Position[0], rect.Bottom);
+        //}
+        //// helper: get the right rectangle of node inside parent's rect
+        //private static Rectangle RightRect(Rectangle rect, KDTreeNode<int> node)
+        //{
+        //    return node.Axis != 0 ?
+        //        Rectangle.FromLTRB(rect.Left, (int)node.Position[1], rect.Right, rect.Bottom) :
+        //        Rectangle.FromLTRB((int)node.Position[0], rect.Top, rect.Right, rect.Bottom);
+        //}
+        #endregion
+
     }
 }

@@ -245,7 +245,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="ParetoDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return 1 - Math.Pow(xm / x, alpha);
         }

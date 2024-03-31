@@ -1082,7 +1082,7 @@ namespace Accord.Collections
             return true;
         }
 
-        internal bool check()
+        public bool check()
         {
             int nblack = 0;
 

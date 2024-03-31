@@ -101,7 +101,7 @@ namespace Accord.Statistics.Analysis
         int outputCount;
         int coefficientCount;
 
-        internal MultinomialLogisticRegression regression;
+        public MultinomialLogisticRegression regression;
 
         private string[] inputNames;
         private string[] outputNames;

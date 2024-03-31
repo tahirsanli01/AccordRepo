@@ -7,6 +7,8 @@
     <AssemblyTitle>Accord.Tests.Statistics</AssemblyTitle>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <NoWarn>$(NoWarn);SYSLIB0011</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Sources\Core.Accord.DataSets\Core.Accord.DataSets.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.IO\Core.Accord.IO.csproj" />
     <ProjectReference Include="..\..\Sources\Core.Accord.Statistics\Core.Accord.Statistics.csproj" />
   </ItemGroup>
 

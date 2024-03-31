@@ -254,6 +254,7 @@ namespace Accord.IO
         ///   Gets the list of worksheets in the spreadsheet.
         /// </summary>
         /// 
+
         public string[] GetWorksheetList()
         {
             var set = new HashSet<string>();
@@ -341,10 +342,10 @@ namespace Accord.IO
             return GetWorksheet(name);
         }
 
-        /// <summary>
-        ///   Gets the entire worksheet as a data set.
-        /// </summary>
-        /// 
+        //    /// <summary>
+        //    ///   Gets the entire worksheet as a data set.
+        //    /// </summary>
+        //    /// 
         public DataSet GetWorksheet()
         {
             DataSet dataset = new DataSet("Excel Workbook");

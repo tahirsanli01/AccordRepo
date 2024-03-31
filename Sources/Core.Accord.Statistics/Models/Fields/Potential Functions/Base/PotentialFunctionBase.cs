@@ -84,7 +84,7 @@ namespace Accord.Statistics.Models.Fields.Functions
 
 
 
-        internal void Deoptimize()
+        public void Deoptimize()
         {
             for (int i = 0; i < Factors.Length; i++)
             {

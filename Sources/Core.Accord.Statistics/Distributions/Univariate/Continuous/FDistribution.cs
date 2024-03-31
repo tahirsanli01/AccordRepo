@@ -257,7 +257,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   u is given as u = (d1 * x) / (d1 * x + d2)</para>.
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double u = (d1 * x) / (d1 * x + d2);
             return Beta.Incomplete(d1 * 0.5, d2 * 0.5, u);

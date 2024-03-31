@@ -308,7 +308,7 @@ namespace Accord.Statistics.Distributions.Univariate
         /// </para>
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return 1.0 / Math.PI * Math.Atan2(x - location, scale) + 0.5;
         }

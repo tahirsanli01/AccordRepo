@@ -304,7 +304,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="GammaDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return Gamma.LowerIncomplete(k, x / theta);
         }

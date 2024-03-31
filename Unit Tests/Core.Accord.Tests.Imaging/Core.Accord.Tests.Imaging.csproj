@@ -16,6 +16,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sources\Core.Accord.Core\Core.Accord.Core.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Imaging\Core.Accord.Imaging.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Math.Core\Core.Accord.Math.Core.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Math\Core.Accord.Math.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Statistics\Core.Accord.Statistics.csproj" />
   </ItemGroup>
 
 </Project>

@@ -171,7 +171,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="KolmogorovSmirnovDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double result;
             switch (DistributionType)

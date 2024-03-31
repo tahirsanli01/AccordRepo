@@ -278,7 +278,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="LognormalDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double z = (Math.Log(x) - location) / shape;
             return 0.5 * Special.Erfc(-z / Constants.Sqrt2);

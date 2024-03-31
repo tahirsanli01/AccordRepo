@@ -161,7 +161,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   probability that a given value or any value smaller than it will occur.</para>
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double result = Gamma.UpperIncomplete(degreesOfFreedom / 2.0, (1 / (2.0 * x)));
             return result;

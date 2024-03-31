@@ -329,7 +329,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   probability that a given value or any value smaller than it will occur.
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             if (NumberOfSamples1 <= NumberOfSamples2)
                 return distributionFunction(x);

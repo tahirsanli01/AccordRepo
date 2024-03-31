@@ -235,13 +235,13 @@ namespace Accord.Tests.Math
             }
             else if (start < end)
             {
-                Assert.AreEqual(start, values.Get(0));
-                Assert.AreEqual(end - 1, values.Get(-1));
+                Assert.AreEqual(start, Convert.ToInt32(values.Get(0)));
+                Assert.AreEqual(end - 1, Convert.ToInt32(values.Get(-1)));
             }
             else
             {
-                Assert.AreEqual(start, values.Get(0));
-                Assert.AreEqual(end + 1, values.Get(-1));
+                Assert.AreEqual(start, Convert.ToInt32(values.Get(0)));
+                Assert.AreEqual(end + 1, Convert.ToInt32(values.Get(-1)));
             }
         }
 
@@ -269,7 +269,7 @@ namespace Accord.Tests.Math
                         if (step > 0)
                         {
                             T[] values = func();
-                            Assert.AreEqual(start, values.Get(0));
+                            Assert.AreEqual(start, Convert.ToInt32(values.Get(0)));
                             Assert.AreEqual(start + (values.Length - 1) * step, values.Get(-1).To<double>(), tol);
                         }
                         else
@@ -280,7 +280,7 @@ namespace Accord.Tests.Math
                     else
                     {
                         T[] values = func();
-                        Assert.AreEqual(start, values.Get(0));
+                        Assert.AreEqual(start, Convert.ToInt32(values.Get(0)));
                         if ((start - end) <= step)
                             Assert.AreEqual(start - (values.Length - 1) * step, values.Get(-1).To<double>(), tol);
                     }

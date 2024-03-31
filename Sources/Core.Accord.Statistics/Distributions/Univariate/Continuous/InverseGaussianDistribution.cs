@@ -206,7 +206,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="InverseGaussianDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double sqrt = Math.Sqrt(lambda / x);
 

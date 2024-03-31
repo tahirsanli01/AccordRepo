@@ -191,7 +191,7 @@ namespace Accord.Statistics.Distributions.Univariate
         /// 
         /// <param name="x">A single point in the distribution range.</param>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double angle = Math.Atan(Math.Exp(x * Math.PI / 2.0));
             return 2 * angle / Math.PI;

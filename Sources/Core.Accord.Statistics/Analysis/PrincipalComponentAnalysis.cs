@@ -476,7 +476,7 @@ namespace Accord.Statistics.Analysis
         /// </summary>
         /// 
         [Obsolete("This method is obsolete.")]
-        protected internal double[,] Adjust(double[,] matrix, bool inPlace)
+        public double[,] Adjust(double[,] matrix, bool inPlace)
         {
             if (Means == null || Means.Length == 0)
             {

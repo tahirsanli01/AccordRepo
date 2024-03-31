@@ -358,7 +358,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   (regularized) Beta function I_x(a,b)</see> as CDF(x) = I_x(a,b)</para>
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             return Accord.Math.Beta.Incomplete(alpha, beta, x);
         }

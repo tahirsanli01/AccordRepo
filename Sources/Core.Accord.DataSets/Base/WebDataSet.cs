@@ -145,7 +145,7 @@ namespace Accord.DataSets.Base
                     using (var compressedFile = new FileStream(downloadedFullFilePath, FileMode.Open, FileAccess.Read))
                     using (var uncompressedFile = new FileStream(uncompressedFileName, FileMode.CreateNew, FileAccess.Write))
                     {
-                        BZip2.Decompress(compressedFile, uncompressedFile, false);
+                        BZip2.Decompress(compressedFile, uncompressedFile);
                     }
                 }
             }

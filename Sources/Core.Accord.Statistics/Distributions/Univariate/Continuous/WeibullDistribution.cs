@@ -243,7 +243,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   probability that a given value or any value smaller than it will occur.
         /// </remarks>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double exp = Math.Exp(-Math.Pow(x / lambda, k));
             return 1.0 - exp;

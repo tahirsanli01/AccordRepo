@@ -620,7 +620,7 @@ namespace Accord.Statistics.Distributions.Univariate
             throw new NotImplementedException();
         }
 #else
-        protected internal abstract double InnerDistributionFunction(double x);
+        public abstract double InnerDistributionFunction(double x);
 #endif
 
 

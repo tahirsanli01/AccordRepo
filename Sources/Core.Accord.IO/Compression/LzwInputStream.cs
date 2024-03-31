@@ -64,7 +64,7 @@ namespace Accord.IO.Compression
     /// }	
     /// </code>
     /// </example>
-    internal class LzwInputStream : Stream
+    public class LzwInputStream : Stream
     {
         /// <summary>
 		/// Magic number found at start of LZW header: 0x1f 0x9d

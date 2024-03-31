@@ -219,7 +219,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="TDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double v = DegreesOfFreedom;
             double sqrt = Math.Sqrt(x * x + v);

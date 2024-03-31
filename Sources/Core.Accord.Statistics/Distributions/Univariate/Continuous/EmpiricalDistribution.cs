@@ -418,7 +418,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="EmpiricalDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             if (type == WeightType.None)
             {

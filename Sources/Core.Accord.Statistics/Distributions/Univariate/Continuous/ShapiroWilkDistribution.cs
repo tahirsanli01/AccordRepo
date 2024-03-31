@@ -229,7 +229,7 @@ namespace Accord.Statistics.Distributions.Univariate
         ///   See <see cref="ShapiroWilkDistribution"/>.
         /// </example>
         /// 
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             double z = g(x);
             double cdf = normal.ComplementaryDistributionFunction(z);

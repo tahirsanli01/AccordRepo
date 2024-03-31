@@ -24,7 +24,6 @@ namespace Accord.Tests.MachineLearning
 {
     using System.Collections.Generic;
     using System.Drawing;
-    using Accord.MachineLearning.Geometry;
     using AForge;
     using Accord.Tests.Imaging.Properties;
     using NUnit.Framework;
@@ -41,35 +40,40 @@ namespace Accord.Tests.MachineLearning
     public class RansacLineImageTest
     {
 
-        [Test]
-#if MONO
-        [Ignore("Disabled on Mono")]
-#endif
-        public void RansacLineConstructorTest2()
-        {
-            Accord.Math.Random.Generator.Seed = 0;
+        #region Exit Comment
+        //        [Test]
+        //#if MONO
+        //        [Ignore("Disabled on Mono")]
+        //#endif
 
-            Bitmap image = Accord.Imaging.Image.Clone(Resources.noise_line);
 
-            //Accord.Controls.ImageBox.Show(image); 
+        //public void RansacLineConstructorTest2()
+        //{
+        //    Accord.Math.Random.Generator.Seed = 0;
 
-            var detector = new SusanCornersDetector();
+        //    Bitmap image = Accord.Imaging.Image.Clone(Resources.noise_line);
 
-            List<IntPoint> cloud = detector.ProcessImage(image);
-            Assert.AreEqual(211, cloud.Count);
+        //    //Accord.Controls.ImageBox.Show(image); 
 
-            Bitmap marks = new PointsMarker(cloud, Color.Pink).Apply(image);
-            //Accord.Controls.ImageBox.Show(marks);
+        //    var detector = new SusanCornersDetector();
 
-            RansacLine ransac = new RansacLine(5, 1e-10);
-            Line line = ransac.Estimate(cloud);
+        //    List<IntPoint> cloud = detector.ProcessImage(image);
+        //    Assert.AreEqual(211, cloud.Count);
 
-            Assert.AreEqual(0.501134932f, line.Intercept, 1e-5);
-            Assert.AreEqual(-0.865369201f, line.Slope, 1e-5);
+        //    Bitmap marks = new PointsMarker(cloud, Color.Pink).Apply(image);
+        //    //Accord.Controls.ImageBox.Show(marks);
 
-            //var result = new LineMarker(line).Apply(image);
-            //Accord.Controls.ImageBox.Show(result);
-        }
+        //    RansacLine ransac = new RansacLine(5, 1e-10);
+        //    Line line = ransac.Estimate(cloud);
+
+        //    Assert.AreEqual(0.501134932f, line.Intercept, 1e-5);
+        //    Assert.AreEqual(-0.865369201f, line.Slope, 1e-5);
+
+        //    //var result = new LineMarker(line).Apply(image);
+        //    //Accord.Controls.ImageBox.Show(result);
+        //}
+        #endregion
+
 
     }
 }

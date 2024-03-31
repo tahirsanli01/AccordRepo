@@ -112,7 +112,7 @@ namespace Accord.Statistics.Distributions.Univariate
         /// <returns>System.Double.</returns>
         /// <remarks>The Cumulative Distribution Function (CDF) describes the cumulative
         /// probability that a given value or any value smaller than it will occur.</remarks>
-        protected internal override double InnerDistributionFunction(double x)
+        public override double InnerDistributionFunction(double x)
         {
             // http://graphpad.com/support/faqid/1598/
             double N = NumberOfSamples;

@@ -51,7 +51,7 @@ namespace Accord.Statistics.Analysis
         internal double[][] classStdDevs;
         internal double[][][] classScatter;
 
-        internal double[][] projectedMeans;
+        public double[][] projectedMeans;
 
         // TODO: Use Mahalanobis distance instead of Euclidean
         // for classification, considering projection covariances.
