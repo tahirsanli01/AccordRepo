@@ -142,7 +142,7 @@ namespace Accord.Math.Optimization
         private bool[][] stars;
         private bool[] rowCover;
         private bool[] colCover;
-        internal int[] starZ;
+        public int[] starZ;
         internal int[] primeZ;
         private bool[][] validMap;
 
@@ -151,8 +151,8 @@ namespace Accord.Math.Optimization
         private double[] minRow;
         private double[] minCol;
 
-        internal bool[] validRow;
-        internal bool[] validCol;
+        public bool[] validRow;
+        public bool[] validCol;
 
         private int path_row_0;
         private int path_col_0;
@@ -467,7 +467,7 @@ namespace Accord.Math.Optimization
             return 3;
         }
 
-        internal static bool[][] findZeros(double[][] C, double[] minRow, double[] minCol, out double[][] min)
+        public static bool[][] findZeros(double[][] C, double[] minRow, double[] minCol, out double[][] min)
         {
             min = Jagged.CreateAs(C);
             for (int r = 0; r < minRow.Length; r++)

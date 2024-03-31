@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>Accord.Tests.Core</AssemblyTitle>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.9.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sources\Core.Accord.Core\Core.Accord.Core.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Imaging\Core.Accord.Imaging.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Math.Core\Core.Accord.Math.Core.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Math\Core.Accord.Math.csproj" />
+    <ProjectReference Include="..\..\Sources\Core.Accord.Statistics\Core.Accord.Statistics.csproj" />
+  </ItemGroup>
+
+</Project>

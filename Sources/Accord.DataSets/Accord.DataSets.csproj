@@ -80,12 +80,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Accord.IO\Accord.IO.csproj">
-      <Project>{63184ebd-6b28-4066-aaee-5b99431e31f4}</Project>
-      <Name>Accord.IO</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Accord.snk" />
     <None Include="packages.config" />
   </ItemGroup>
