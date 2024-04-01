@@ -34,7 +34,7 @@ namespace Accord.Tests.Math
     {
         public static FileStream GetMat(string resourceName)
         {
-            string fileName = Path.Combine(TestContext.CurrentContext.TestDirectory, "Resources", "mat", resourceName);
+            string fileName = Path.Combine("D:\\repos\\WORKING\\AccordRepo\\Unit Tests\\Core.Accord.Tests.Math\\", "Resources", "mat", resourceName);
             return new FileStream(fileName, FileMode.Open, FileAccess.Read);
         }
 
@@ -42,7 +42,7 @@ namespace Accord.Tests.Math
         [Test]
         public void matrix_test_int32()
         {
-            string localPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "Resources", "mat");
+            string localPath = Path.Combine("D:\\repos\\WORKING\\AccordRepo\\Unit Tests\\Core.Accord.Tests.Math\\", "Resources", "mat");
 
             #region doc_matrix_int32
             // Let's say we would like to load different .mat files which can be found at:
@@ -85,7 +85,7 @@ namespace Accord.Tests.Math
         [Test]
         public void matrix_test_bytes()
         {
-            string localPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "Resources", "mat");
+            string localPath = Path.Combine("D:\\repos\\WORKING\\AccordRepo\\Unit Tests\\Core.Accord.Tests.Math\\", "Resources", "mat");
 
             #region doc_matrix_byte
             // Let's say we would like to load different .mat files which can be found at:
@@ -118,7 +118,7 @@ namespace Accord.Tests.Math
         [Test]
         public void structure_test()
         {
-            string localPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "Resources", "mat");
+            string localPath = Path.Combine("D:\\repos\\WORKING\\AccordRepo\\Unit Tests\\Core.Accord.Tests.Math\\", "Resources", "mat");
 
             #region doc_structure
             // Let's say we would like to load a .mat file

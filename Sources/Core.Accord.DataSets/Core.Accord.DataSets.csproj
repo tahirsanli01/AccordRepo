@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyTitle>Accord.Statistics</AssemblyTitle>
     <Description>Accord.NET - IO Library</Description>
+    <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
   </PropertyGroup>
 
   <ItemGroup>

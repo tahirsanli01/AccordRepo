@@ -40,6 +40,7 @@ namespace Accord.Imaging.Tests
             string localPath = TestContext.CurrentContext.TestDirectory;
             var images = new TestImages(path: localPath);
             Bitmap lena1 = images["lena.bmp"];
+            var resource = Resources.lena512;
             Bitmap lena2 = Accord.Imaging.Image.Clone(Resources.lena512);
 
             Assert.AreEqual(lena1.Width, lena2.Width);

@@ -235,7 +235,15 @@ namespace Accord.DataSets
             }
             else
             {
-                bmp = Accord.Imaging.Image.FromUrl("https://homepages.cae.wisc.edu/~ece533/images/" + name, path);
+                if(name=="lena.bmp")
+                {
+                    bmp = Accord.Imaging.Image.FromUrl("https://eeweb.engineering.nyu.edu/~yao/EL5123/image/lena_gray.bmp", path);
+                
+                }
+                else
+                {
+                    bmp = Accord.Imaging.Image.FromUrl("https://homepages.cae.wisc.edu/~ece533/images/" + name, path);
+                }
             }
             
 

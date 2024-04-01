@@ -242,7 +242,7 @@ namespace Accord.Tests.Statistics
         [Category("Office")]
         public void ApplyTest4()
         {
-            string path = Path.Combine(TestContext.CurrentContext.TestDirectory, "Resources", "intrusion.xls");
+            string path = Path.Combine("D:\\repos\\WORKING\\AccordRepo\\Unit Tests\\Core.Accord.Tests.Statistics", "Resources", "intrusion.xls");
 
             ExcelReader db = new ExcelReader(path, false, true);
 
