@@ -615,7 +615,7 @@ namespace Accord.Statistics.Distributions.Univariate
         /// </remarks>
         /// 
 #if COMPATIBILITY
-        protected internal virtual double InnerDistributionFunction(double x)
+        public virtual double InnerDistributionFunction(double x)
         {
             throw new NotImplementedException();
         }
