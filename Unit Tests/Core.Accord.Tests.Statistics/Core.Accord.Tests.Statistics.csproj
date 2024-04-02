@@ -13,6 +13,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Core.Accord.DataSets" Version="1.0.0" />
+    <PackageReference Include="Core.Accord.IO" Version="1.0.0" />
+    <PackageReference Include="Core.Accord.Statistics" Version="1.0.0" />
     <PackageReference Include="coverlet.collector" Version="6.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,12 +27,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Sources\Core.Accord.DataSets\Core.Accord.DataSets.csproj" />
-    <ProjectReference Include="..\..\Sources\Core.Accord.IO\Core.Accord.IO.csproj" />
-    <ProjectReference Include="..\..\Sources\Core.Accord.Statistics\Core.Accord.Statistics.csproj" />
   </ItemGroup>
 
 </Project>
