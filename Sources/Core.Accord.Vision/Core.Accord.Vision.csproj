@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyTitle>Accord.Vision</AssemblyTitle>
+    <Description>Accord.NET - Vision Library</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Accord.Core\Core.Accord.Core.csproj" />
+    <ProjectReference Include="..\Core.Accord.Imaging\Core.Accord.Imaging.csproj" />
+    <ProjectReference Include="..\Core.Accord.MachineLearning\Core.Accord.MachineLearning.csproj" />
+    <ProjectReference Include="..\Core.Accord.Math.Core\Core.Accord.Math.Core.csproj" />
+    <ProjectReference Include="..\Core.Accord.Math\Core.Accord.Math.csproj" />
+    <ProjectReference Include="..\Core.Accord.Statistics\Core.Accord.Statistics.csproj" />
+  </ItemGroup>
+
+</Project>
