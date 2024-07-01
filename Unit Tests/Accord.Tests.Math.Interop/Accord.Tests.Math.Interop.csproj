@@ -33,7 +33,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'mono|x86' ">
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DefineConstants>TRACE;MONO</DefineConstants>
-<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework">
@@ -98,10 +98,6 @@
     <ProjectReference Include="..\..\Sources\Accord.Statistics\Accord.Statistics.csproj">
       <Project>{fd8101dd-c95d-42d6-ad44-ae01c25f2811}</Project>
       <Name>Accord.Statistics</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Accord.Tests.Math.Cpp\Accord.Tests.Math.Cpp.vcxproj">
-      <Project>{161bd953-537d-4325-8a00-22475fc9088e}</Project>
-      <Name>Accord.Tests.Math.Cpp</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
